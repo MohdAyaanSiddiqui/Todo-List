@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 24px;
+}
+body{
+    background-color:#4b4453 ;
+    color: white;
+    min-height: 100vh;
+
+}
+h1,form,.todo-list-container,.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;   
+}
+input,button{
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+.input-box,.add-button{
+    padding: 0.5rem;
+}
+.todo-container{
+    background-color: white;
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    min-height: fit-content;
+}
+.todo-item{
+    list-style: none;
+    flex-grow: 1;/*it will take remaining space*/
+    color: black; /* Change text color to black for better visibility */
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
+}
+.deletebutton, .completebutton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.deletebutton , .completebutton{
+    cursor: pointer;
+    color: #333;
+    
+}
+.fa-check,.fa-trash
+{
+    pointer-events: none;
+    color: white;
+    padding: 0.5rem;
+}
+.deletebutton {
+    background-color: royalblue;
+}
+.completebutton{
+    background-color: lawngreen;
+}
+
+.completed .todo-item {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
